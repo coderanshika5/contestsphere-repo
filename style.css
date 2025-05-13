@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f111a;
+  color: #f0f0f0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #1f2333;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #444;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+}
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Main Sections */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Platform Section */
+.platform {
+  background: #1c1e29;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.platform h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #78d9ff;
+}
+
+/* Contest List */
+.contest-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Contest Card */
+.contest {
+  background: #262a3c;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contest:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contest h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.contest p {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin: 0.2rem 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f2333;
+  color: #999;
+  border-top: 1px solid #333;
+}
+.join-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.join-btn:hover {
+  background-color: #4ba6e7;
+}
